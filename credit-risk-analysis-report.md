@@ -10,7 +10,7 @@ In this section, describe the analysis you completed for the machine learning mo
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 --------------------------------------------------------------------------------------------------------
-The purpose of this analysis is for the code to run through the data of loans and predict whether or not certain loans would be categorized as a (0) "healthy loan" or a (1) "high-risk loan". Our target values are (0) "healthy loan" and (1) "high-risk loan". The value shown with 'value_counts' are 75036 (0) "healthy" loans and 2500 "high-risk" loans. 
+The purpose of this analysis is to create a model to predict a borrowers' creditworthiness for a loan. The model will to run through the data of loans and predict whether or not certain loans would be categorized as a (0) "healthy loan" or a (1) "high-risk loan". Our target values are (0) "healthy loan" and (1) "high-risk loan". The value shown with 'value_counts' are 75036 (0) "healthy" loans and 2500 "high-risk" loans. 
 
 For this Challenge I performed these steps to result in the desired results:
   1. Split the Data into Training and Testing Sets
@@ -27,6 +27,10 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 * Machine Learning Model 1:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
 
+  • The model states that the precision of predicting 0 "healthy"     loans is 100% and recall is 99%.
+  • This means the model is good about predicting the "healthy" loans almost every single time.
+  • The model states the precision of predicting 1 "high-risk" loans is 85% and the recall is 91%.
+  • This could pose a problem because this could mean that the model could be predicting false postives in the sense that they are labeling loans "healthy" when they should be labeled "high-risk".
 
 * Machine Learning Model 2:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
